@@ -1,0 +1,400 @@
+
+
+    
+    
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+;
+}
+
+body 
+{
+min-height:100vh;
+background: url('images/MainBackground.jpg') no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px;
+    background: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font font-weight: 700
+
+}
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 30;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: rgb(93, 70, 70);
+    transition: .3s;
+    z-index: 2;
+
+}
+
+.navbar a:hover{
+    /* text-decoration: underline; */
+}
+.navbar a:hover::before{
+    width: 100%;
+
+
+}
+section {
+    padding: 20px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+h2 {
+    color: #333;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* This is the Services Section */
+
+/* Clubs */
+.clubs-section {
+    padding: 60px 100px;
+    
+    margin-top: 150px;
+}
+
+
+.club {
+   
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.club h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.club p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Healthcare */
+.healthcare-section {
+    padding: 60px 100px;
+   
+    margin-top: 30px;
+}
+
+.healthcare-service {
+   
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.healthcare-service h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.healthcare-service p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Career Counseling*/
+.career-counseling-section {
+    padding: 60px 100px;
+    
+    margin-top: 30px;
+}
+
+.career-service {
+   
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.career-service h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.career-service p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Sports Facilities */
+.sports-facilities-section {
+    padding: 60px 100px;
+    
+    margin-top: 30px;
+}
+
+.facility {
+   
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.facility h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.facility p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+.section2 {
+    margin-bottom: 30px;
+}
+
+.section2 h3 {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.section2 p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+.imageholder div{
+    display: inline;
+    place-items: center;
+}
+
+.image img{
+    width: 40px;
+    border: 2px solid yellow;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all ease-in-out 0.8s;
+    cursor: pointer;
+    margin: 0 3px;
+
+}
+.image img:hover{
+    filter: saturate(100%);
+    width: 75%;
+}
+.form-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-header h1 {
+    text-align: center;
+    color: #003366;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #003366;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #00509e;
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-section h2 {
+    font-size: 20px;
+    color: #003366;
+}
+
+.form-section p {
+    font-size: 14px;
+    color: #555;
+}
+
+.form-section textarea {
+    resize: vertical;
+}
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    position: relative;
+}
+
+footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+footer .footer-section h3 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+footer .footer-section p,
+footer .footer-section a {
+    font-size: 14px;
+    color: #f0f0f0;
+    text-decoration: none;
+    line-height: 1.6;
+}
+
+footer .footer-section a:hover {
+    text-decoration: underline;
+}
+
+footer .social-icons {
+    margin-top: 15px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #ff6600;
+}
+
+footer .footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #cccccc;
+}

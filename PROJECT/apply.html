@@ -1,0 +1,157 @@
+<html>
+<head>
+    <title>home page</title>
+    <link rel="stylesheet" href="cairouniversity.css">
+    <script src="form.js"></script>
+</head>
+
+<body>
+    
+    <header class="header">
+    <a href="index.html" class="logo"><img src="images/logo.png" width="100px" height="100px" ></a>
+        <h1>Cairo University</h1>
+        
+        <nav class="navbar">
+            <a href="register.html">Register</a>
+           
+            <!--academics dropdown-->
+            <div class="dropdown">
+            <a href="academics.html" class=""dropdown-toggle>Academics</a>
+            <div class="dropdown-menu">
+                <a href="computerscience.html">computer science</a>
+                <a href="business.html">Business</a>
+                <a href="computerengineering.html">Computer Engineering</a>
+                <a href="electricalengineering.html">Electrical Engineering</a>
+                <a href="chemicalengineering.html">Chemical Engineering</a>
+                <a href="phsycology.html">Psychology</a>
+                <a href="medicine.html">medicine</a>
+                <a href="engineering.html">Engineering</a>
+            </div>
+            </div>
+
+            </div>
+             
+            </div>
+            <!-- Services dropdown -->
+            <div class="dropdown">
+                <a href="services.html" class="dropdown-toggle">Services</a>
+                <div class="dropdown-menu">
+                    <a href="clubs.html">Clubs</a>
+                    <a href="career.html">Career Counseling</a>
+                    <a href="healthcare.html">Health Care</a>
+                    <a href="sports.html">Sports Facilities</a>
+                </div>
+            </div>
+            
+            <!-- requirements dropdown -->
+            <div class="dropdown">
+                <a href="requirements.html" class="dropdown-toggle">requirements</a>
+                <div class="dropdown-menu">
+                    <a href="igdiploma.html">IG Diploma</a>
+                    <a href="ibdiploma.html">Ib Diploma</a>
+                    <a href="americandiploma.html">American Diploma</a>
+                    <a href="canadian.html">Canadian Diploma</a>
+                    <a href="german.html">German Diploma</a>
+                    <a href="thanaweya.html">Thanaweya Diploma</a>
+                    <a href="bac.html">Bac</a>
+                </div>
+            </div>
+        
+            <a href="aboutus.html">About Us</a>
+    </header> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="form-container">
+        <div class="form-header">
+            <h1>University Application Form</h1>
+        </div>
+
+        <form action="#" method="post">
+            
+            <!-- Personal Information Section -->
+            <div class="form-section">
+                <h2>Personal Information</h2>
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" class="form-input" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-input" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" class="form-input" required>
+            </div>
+
+            <!-- Academic Information Section -->
+            <div class="form-section">
+                <h2>Academic Information</h2>
+                <label for="high-school">High School Attended</label>
+                <input type="text" id="high-school" name="high-school" class="form-input" required>
+
+                <label for="graduation-year">Year of Graduation</label>
+                <input type="number" id="graduation-year" name="graduation-year" class="form-input" min="1900" max="2100" required>
+
+                <label for="program">Program of Study</label>
+                <select id="program" name="program" class="form-input" required>
+                    <option value="">Select Program</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="medicine">Medicine</option>
+                    <option value="business">Business</option>
+                    <option value="arts">phsycology</option>
+                    <option value="sciences">computerscience</option>
+                </select>
+            </div>
+
+            <!-- Statement of Interest Section -->
+            <div class="form-section">
+                <h2>Statement of Interest</h2>
+                <label for="interest">Why do you want to join our university?</label>
+                <textarea id="interest" name="interest" class="form-input" rows="6" required></textarea>
+                <p>Please provide a brief statement about why you are interested in studying at our university and why you chose the selected program.</p>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-section">
+                <input type="submit" value="Submit Application" class="form-submit">
+            </div>
+
+        </form>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <!-- University Information -->
+            <div class="footer-section">
+                <h3>Cairo University</h3>
+                <p>University Street, Giza, Cairo, Egypt</p>
+                <p>Email: info@cairo.edu</p>
+                <p>Phone: +20 2 12345678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/cairo.university" target="_blank">Facebook</a>
+                    <a href="https://twitter.com/cairo_university" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com/cairo_university" target="_blank">Instagram</a>
+                    <a href="https://www.linkedin.com/school/cairo-university" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Cairo University. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+        
+    </body>
+    </html>
